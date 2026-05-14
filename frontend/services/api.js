@@ -1,8 +1,7 @@
-export default function App() {
-  return (
-    <div style={{ padding: 20 }}>
-      <h1>Frontend is Working</h1>
-      <p>If you see this, React is fine.</p>
-    </div>
-  );
-}
+import axios from "axios";
+
+const API = axios.create({
+  baseURL: "https://behavior-disorder-system-production.up.railway.app",
+});
+
+export default API;
